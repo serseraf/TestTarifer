@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3877636239">
+  <component name="DataSourceManagerImpl" format="xml" hash="4292534249">
     <data-source source="LOCAL" name="Rails TestTarifer: development" uuid="fd44577c-1702-4768-af02-40e17bd03c49">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
