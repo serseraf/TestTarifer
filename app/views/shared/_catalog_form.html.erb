@@ -1,0 +1,14 @@
+<%= form_for @catalog do |f| %>
+    <table>
+      <tr>
+        <td>Название:</td>
+        <td><%= f.text_field :name, size: "51" %></td>
+      </tr>
+      <tr>
+        <td>Описание:</td>
+        <td><%= f.text_area :description, size: "50x3" %></td>
+      </tr>
+    </table>
+    <%= f.submit 'Сохранить'%>
+    <%= link_to 'Отменить', controller: 'catalogs', action: 'index' %>
+<%end%>

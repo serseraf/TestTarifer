@@ -1,0 +1,15 @@
+<% if @products.empty?  || @products.nil? %>
+    <h2>Нет данных в БД</h2>
+<% else %>
+    <table>
+      <% @products.each do |i| %>
+          <tr>
+            <td class="id"><%= i.id %></td>
+            <td class="name"><%= i.name %></td>
+            <td class="full"><%= i.description %></td>
+            <td class="symbol"><%= link_to 'Редактировать', edit_product_path(i) %></td>
+            <td class="symbol"><%= link_to 'Удалить', i,method: :delete, data: { confirm: "Are you sure?" }  %></td>
+          </tr>
+      <% end %>
+    </table>
+<% end %>

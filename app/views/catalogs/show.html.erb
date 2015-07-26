@@ -1,0 +1,9 @@
+<h2>Каталог</h2>
+<h2 class="name"><%= @catalog.name %></h2>
+<h2>Список продуктов</h2>
+<%= render partial: 'shared/products_list' %>
+<%= link_to 'Добавить новый продукт в каталог', product_path(@catalog.id) %> <br>
+<%= link_to 'Список всех каталогов', catalogs_path %>
+
+
+
